@@ -5,7 +5,7 @@
     <li>
       <label>
         <input type="checkbox" <%= 'checked' if task.completed %> disabled>
-        <%= task.title %>
+        <%= link_to task.title, task_path(task) %>
       </label>
     </li>
   <% end %>
